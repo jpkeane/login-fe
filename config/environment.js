@@ -49,7 +49,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.host = 'http://jk-tut-login-be-staging.herokuapp.com';
+    ENV.host = 'https://jk-tut-login-be-staging.herokuapp.com';
   }
 
   return ENV;
