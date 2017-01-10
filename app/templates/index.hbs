@@ -3,3 +3,12 @@
 
     <p>This is the sample front end. We hope you find exactly what you're looking for.</p>
 </div>
+
+<h2>Latest News</h2>
+
+<ul>
+  {{#each latest_news as |news|}}
+    {{news-item news=news}}
+  {{/each}}
+</ul>
+{{#link-to "news" class="btn btn-default"}}View all news{{/link-to}}

@@ -1,0 +1,11 @@
+<ul>
+  {{#each model as |news|}}
+    {{news-item news=news}}
+  {{/each}}
+</ul>
+
+{{#if showAll}}
+  <button {{action 'showAll'}} class="btn btn-default center-block">Show All</button>
+{{else}}
+    <button {{action 'showLess'}} class="btn btn-default center-block">Show Less</button>
+{{/if}}
